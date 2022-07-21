@@ -1,0 +1,15 @@
+<form method="post" action="/addEmp">
+    <h1>Add Form</h1>
+    <div class="form-group">
+        <input type="text" class="form-group" placeholder="Student ID" name="Id"  >
+        <br />
+        <input type="text" class="form-group" placeholder="Student Name" name="Name" value="{{employee.stdntname}}" >
+        <br />
+        <input type="text" class="form-group" placeholder="Student Age" name="Age" value="{{employee.stdntage}}" />
+        <br />
+        <input type="text" class="form-group" placeholder="Student Group" name="Group" value="{{employee.stdntgroup}}" />
+        <br />
+        <input type="text" class="form-group" placeholder="Student Gender" name="Gender"  value="{{employee.stdntgender}}" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

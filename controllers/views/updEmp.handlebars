@@ -1,0 +1,24 @@
+<h1>Show All Student</h1>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+      <th scope="col">Group</th>
+      <th scope="col">Gender</th>
+        <th scope="col">Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each list}}
+    <tr class="table-active">
+      <th scope="row">{{this.stdntname}}</th>
+      <td>{{this.stdntage}}</td>
+      <td>{{this.stdntgroup}}</td>
+      <td>{{this.stdntgender}}</td>
+      <td><a href="/empupdate/{{this.stdntid}}" class="btn btn-success">Edit</a> </td>
+       <td><a href="/deleteupdate/{{this.stdntid}}" class="btn btn-denger">Delete</a> </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
